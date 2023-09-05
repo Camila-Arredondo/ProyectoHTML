@@ -1,0 +1,175 @@
+* {
+  background-color: azure;
+}
+
+.myli {
+  background-color: bisque;
+  color: red;
+}
+header {
+  color: red;
+  background-color: red;
+}
+
+.content-content-box > div {
+  background-color: green;
+  width: 300px;
+  margin: 30px;
+  border: 10px solid black;
+}
+/* se pone punto para llamar por clase y se usa con el nombre solo de etiqueta */
+
+#articulo1 {
+  color: aliceblue;
+  background-color: blueviolet;
+}
+#body1 {
+  background-color: blueviolet;
+}
+/* cuando llamemos id usaremos simbolo gato  */
+/*p {
+  font-size: 24px;
+}*/
+#myp {
+  color: blue;
+}
+.myp {
+  font-size: 24px;
+}
+.back {
+  background-color: brown;
+}
+
+.color-rojo-back-azul {
+  color: red;
+  background-color: blue;
+}
+
+/* Modelo de caja */
+.contenedor {
+  margin: 50px;
+  background-color: violet;
+  padding: 10px;
+  border: 5px solid red;
+  color: green;
+}
+
+.contenido {
+  background-color: aquamarine;
+}
+
+.contenedor-con-imagen {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  background-color: aqua;
+  background-image: url("Public/logo-de-nintendo-1-1200x670.png");
+  background-size: cover;
+  background-color: center;
+}
+
+.contenido-con-imagen {
+  background-color: white;
+}
+
+/* Selectores*/
+/* Selector por elemento*/
+span {
+  font-weight: bold;
+}
+
+/* Asignan los mismos estilos a los elementos con nombres diferentes, esta regla afecta a todos los elementos <p> y <span>*/
+
+article,
+span {
+  color: violet;
+}
+
+/* Afecta solo a los elementos <p> que se encuentran dentro de la etiqueta <main>, ya sea contenido directo o indirecto*/
+main p {
+  background-color: aquamarine;
+}
+
+/* uesa el caracter > para referenciar a un elemento que es hijo directo .contenedor .parrafo */
+.contenedor-parrafo > p {
+  font-size: 35px;
+}
+
+/* Este selector hace referencia a elementos que estan precedidos por otros elementos; ambos deben estar al mismo nivel */
+
+h1 + p {
+  color: red;
+}
+
+/* Estilos mas usados */
+/* Declara el tipo de letra que se usa para mostrar en un texto.Se pueden declarar multiples valores separados por coma para ofrecer al navegador varias alternativas en caso de que alguna no se encuentre disponible */
+.container {
+  border-radius: 1px solid black;
+  padding: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container > .content > p {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  font-weight: 100;
+  font-style: oblique;
+}
+
+.content > h3 {
+  background-color: bisque;
+  font: bold 30px Arial, sans-serif; /*Permite declarar varios aributos al mismo tiempo separados por espacios, 1° grpspr 2° tamañp 3°familia de la fuente*/
+  text-align: center;
+  line-height: 60px; /* Define un espacio entre lineas*/
+  background-image: url("Public/logo.png");
+}
+
+.mydiv {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: rgb(156, 255, 301);
+  background-image: url("Public/logo.png");
+}
+.div-in-mydiv {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+.div-in-mydiv-2 {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  background-color: #ff0000;
+}
+
+.div-in-mydiv-3 {
+  height: 50px;
+  width: 50px;
+  margin: 20px 0px;
+  border: 1px solid black;
+  background-color: #00ff00;
+}
+
+.tamano {
+  margin: 100px 20px;
+  height: 300px;
+  width: 300px;
+  background-color: black;
+}
+
+.tamano-hijo {
+  height: 50%;
+  width: 50%;
+  background-color: pink;
+}
+
+.div-vh-vw {
+  height: 100vh; /* 100% del alto de la página*/
+  width: 100vw; /*100% del ancho de la página*/
+  background-color: blue;
+}

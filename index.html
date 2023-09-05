@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- ALT + SHIFT + Apara crear un comentario -->
+<!-- esta etiqueta le indica al naegador que el contenido es HTML5 -->
+<!-- < > son etiquetas-->
+
+<html lang="es">
+  <!-- todo documento tiene una etiqueta htm y esta es la madre de todas las etiquetas -->
+  <!-- es indica que estamos escribiendo en español -->
+
+  <head>
+    <meta charset="UTF-16" />
+    contenido
+    <!-- aporta meta informacion del contenido de documento, solo tiene una apertura y no un cierre -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Introducción a HTML</a></li>
+        <li><a href="estructura.html"> Estructura de un documento HTML</a></li>
+        <li><a href="introCSS.html">Introducción a CSS</a></li>
+        <li><a href="introjs.html">Introducción a JS</a></li>
+        <li><a href="introDom.html">Introducción a DOM</a></li>
+      </ul>
+    </nav>
+    <!-- emmet es un plugin para editores de code, que nos proporcionan atajos para programar de mejor forma -->
+    <h1>Encabezado Principal</h1>
+    <!-- encabezado: h1 es el mas alto de 6 niveles de importancia 
+NOTA: nunca, pero nunca lo usen para dar estilos a textos, para esto usaremos CSS-->
+    <h2>Encabezado 2</h2>
+    <h3>Encabezado 3</h3>
+    <h4>Encabezado 4</h4>
+    <h5>Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
+    <!-- CTRL + ALT + FLECHA = multiplicar cursor
+     ALT + MOUSE multiplica cursor -->
+    <hr />
+    <!-- salto entre parrafos divididos por una línea  -->
+    <h2>otro tema</h2>
+    <h3>parrafos</h3>
+    <p>
+      <span style="color: red">Lorem ipsum dolor</span>sit amet consectetur.
+      <br />
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel mauris
+      ultrices mauris commodo interdum euismod id justo. Morbi rhoncus libero
+      vitae velit fringilla accumsan. Nullam facilisis augue mauris, interdum
+      dictum odio egestas non. Suspendisse nec gravida orci, sed porta eros.
+      Phasellus pharetra volutpat arcu, eget egestas nisl condimentum et.
+      Suspendisse facilisis justo id nibh venenatis, non aliquam neque
+      venenatis. Curabitur dictum, ipsum in faucibus venenatis, sapien nisl
+      iaculis lorem, ac egestas ligula odio in ante.
+    </p>
+    <hr />
+    <h2>link</h2>
+    <h3>Ancla</h3>
+    <a href="https://www.google.com">Google</a>
+    <br />
+    <a target="_blank" href="https://www.google.com">Google ventana aparte</a>
+    <hr />
+    <h2>Formulario 🙁</h2>
+    <form action="/syberform" method="GET">
+      <label for="nombre">Nombre </label><br />
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="Indica tu nombre"
+        required
+      />
+      <br />
+      <br />
+      <label for="edad">Edad</label><br />
+      <input type="number" name="edad" id="edad" placeholder="Indica tu edad" />
+      <br /><br />
+      <label for="email">Email</label><br />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Indica tu email"
+      />
+      <br /><br />
+      <label for="pwd">Password</label><br />
+      <input type="password" name="pwd" id="pwd" placeholder="Password" />
+      <br /><br />
+      <label for="texto">Texto</label><br />
+      <textarea
+        name="texto"
+        id="texto"
+        cols="30"
+        rows="10"
+        placeholder="Ingresa tu comentario"
+      ></textarea>
+      <hr />
+      <input type="submit" />
+      <hr />
+    </form>
+    <hr />
+    <h2>Imagen</h2>
+    <img src="Public/1693229689370.jpg" alt="scrum" width="300" height="200" />
+    <hr />
+    <h2>Listado</h2>
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+    </ul>
+    <ol>
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>
+        <ul>
+          <li style="list-style: lower-roman">sub item1</li>
+          <li style="list-style: lower-roman">sub item2</li>
+          <li style="list-style: lower-roman">sub item3</li>
+        </ul>
+      </li>
+    </ol>
+    <hr />
+    <h2>Tabla</h2>
+    <table style="border: solid 1px black">
+      <thead>
+        <!-- Cabezera -->
+        <tr>
+          <th style="border: solid 1px black; padding: 5px">Implante</th>
+          <th style="border: solid 1px black; padding: 5px">Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Cuerpo -->
+        <tr>
+          <td style="border: solid 1px black; padding: 5px">Ojo laser</td>
+          <td style="border: solid 1px black; padding: 5px">5.000.000</td>
+        </tr>
+        <tr>
+          <td style="border: solid 1px black; padding: 5px">Audifonos</td>
+          <td style="border: solid 1px black; padding: 5px">5.000.000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <!-- Bajada -->
+        <tr>
+          <td style="border: solid 1px black">Total</td>
+          <td style="border: solid 1px black">10.000.000</td>
+        </tr>
+      </tfoot>
+    </table>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

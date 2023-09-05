@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Estilos embebidos -->
+    <style>
+      .div-ejemplo-enbebido {
+        color: red;
+      }
+    </style>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Introducción a HTML</a></li>
+          <li>
+            <a href="estructura.html"> Estructura de un documento HTML</a>
+          </li>
+          <li><a href="introCSS.html">Introducción a CSS</a></li>
+          <li><a href="introjs.html">Introducción a JS</a></li>
+          <li><a href="introDom.html">Introducción a DOM</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <!--Content-box -->
+        <article class="content-content-box">
+          <div>ContentBox</div>
+        </article>
+        <article>
+          <p>Hola a todos</p>
+          <p class="myp back">Holi 1</p>
+          <p class="myp">Holi 2</p>
+          <p id="myp" class="myp">Holi 3</p>
+          <p class="myp color-rojo-back-azul">P con dos class</p>
+        </article>
+      </section>
+
+      <section>
+        <!-- Estilo en linea -->
+        <article>
+          <div
+            class="div-ejemplo-enbebido"
+            style="background-color: (145, 145, 145)"
+          >
+            Holo
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <!-- Ejemplo modelo de caja -->
+        <article>
+          <div class="contenedor">
+            <div class="contenido">Hola</div>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <!-- Ejemplo modelo de caja con imagen -->
+        <article>
+          <div class="contenedor-con-imagen">
+            <div class="contenido-con-imagen">Hola de nuevo</div>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <!-- Selectores -->
+        <article class="content-contenedor-parrafo">
+          <div class="contenedor-parrafo">
+            <p>
+              Este es un
+              <span>parrafo</span>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <h2>Estilos más usados</h2>
+        <hr />
+        <article>
+          <div class="container">
+            <div class="content">
+              <p>Parrafo</p>
+              <h3>Este es un detalle</h3>
+              <div class="mydiv">
+                <div class="div-in-mydiv"></div>
+                <div class="div-in-mydiv-2"></div>
+                <div class="div-in-mydiv-3"></div>
+              </div>
+              <div class="tamano">
+                <div class="tamano-hijo">holito</div>
+              </div>
+              <div class="div-vh-vw">texto</div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <footer></footer>
+    </main>
+  </body>
+</html>
