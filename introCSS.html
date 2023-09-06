@@ -1,95 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- Estilos con archivos externos -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Estilos embebidos -->
     <style>
-      .div-ejemplo-enbebido {
+      .div-ejemplo-embebido {
         color: red;
       }
     </style>
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Introducción a HTML</a></li>
-          <li>
-            <a href="estructura.html"> Estructura de un documento HTML</a>
-          </li>
-          <li><a href="introCSS.html">Introducción a CSS</a></li>
+          <li><a href="index.html">Introdución a HTML</a></li>
+          <li><a href="estructura.html">Estructura de un documento HTML</a></li>
+          <li><a href="introcss.html">Introducción a CSS</a></li>
           <li><a href="introjs.html">Introducción a JS</a></li>
-          <li><a href="introDom.html">Introducción a DOM</a></li>
+          <li><a href="introdom.html">Introducción al DOM</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
-        <!--Content-box -->
-        <article class="content-content-box">
-          <div>ContentBox</div>
-        </article>
+        <!-- Content-box -->
+        <article class="content-content-box"><div></div></article>
         <article>
-          <p>Hola a todos</p>
+          <p>holi</p>
           <p class="myp back">Holi 1</p>
           <p class="myp">Holi 2</p>
           <p id="myp" class="myp">Holi 3</p>
-          <p class="myp color-rojo-back-azul">P con dos class</p>
+          <p class="myp color-rojo-back-azul">p con dos class</p>
         </article>
       </section>
 
       <section>
-        <!-- Estilo en linea -->
         <article>
-          <div
-            class="div-ejemplo-enbebido"
-            style="background-color: (145, 145, 145)"
-          >
-            Holo
+          <!-- Estilo en línea -->
+          <div class="div-ejemplo-embebido" style="background-color: blue">
+            holi
           </div>
         </article>
-      </section>
-
-      <section>
-        <!-- Ejemplo modelo de caja -->
+        <!-- ELJEMPLO DE MODELO DE CAJA -->
         <article>
           <div class="contenedor">
-            <div class="contenido">Hola</div>
+            <div class="contenido">Holi</div>
           </div>
         </article>
-      </section>
-
-      <section>
-        <!-- Ejemplo modelo de caja con imagen -->
+        <!-- Ejemplo modelo caja con imagen -->
         <article>
           <div class="contenedor-con-imagen">
-            <div class="contenido-con-imagen">Hola de nuevo</div>
+            <div class="contenido-con-imagen">Holi</div>
           </div>
         </article>
-      </section>
-
-      <section>
         <!-- Selectores -->
         <article class="content-contenedor-parrafo">
           <div class="contenedor-parrafo">
-            <p>
-              Este es un
-              <span>parrafo</span>
-            </p>
+            <h1>este es el título de el párrafo</h1>
+            <p>Este es un <span> párrafo</span></p>
           </div>
         </article>
       </section>
 
       <section>
-        <h2>Estilos más usados</h2>
-        <hr />
+        <h2>Estilos mas usados</h2>
         <article>
           <div class="container">
             <div class="content">
-              <p>Parrafo</p>
+              <p>Párrafo</p>
               <h3>Este es un detalle</h3>
               <div class="mydiv">
                 <div class="div-in-mydiv"></div>
@@ -97,14 +79,125 @@
                 <div class="div-in-mydiv-3"></div>
               </div>
               <div class="tamano">
-                <div class="tamano-hijo">holito</div>
+                <div class="tamano-hijo">sss</div>
               </div>
-              <div class="div-vh-vw">texto</div>
+              <div class="div-vh-vw">100vh-100vw</div>
+              <div class="punto">100 pt</div>
+              <div class="div-rem">20 rem</div>
+              <div class="div-em">20 em</div>
+              <div class="_contenedor">
+                contenedor
+                <div class="_contenido">
+                  contenido
+                  <div class="_otrocontenido">otro contenido</div>
+                  <div class="contenido-grande">contenido muy grande</div>
+                </div>
+              </div>
+              <div class="contenedor-de-bordes">
+                <div class="borde-1"></div>
+                <div class="borde-2"></div>
+                <div class="borde-3"></div>
+                <div class="borde-4"></div>
+              </div>
+              <div class="borde-en-una-linea"></div>
             </div>
           </div>
         </article>
       </section>
-      <footer></footer>
+
+      <section>
+        <article class="content-d-flex">
+          <h2>Display Flex</h2>
+          <div class="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <!-- <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div> -->
+          </div>
+          <h2>Contenido y contenedor perfectamente centrados</h2>
+          <div class="contenedor-perfecto">
+            <div class="contenido-perfecto">perfecto</div>
+          </div>
+          <h2>Elementos hijos de flex</h2>
+          <div class="flex-container-2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <h2>Flex-shrink</h2>
+          <div class="flex-container-3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <h2>DisplayGrid (CSS Layaout)</h2>
+          <h3>Template columns</h3>
+          <div class="container-grid grid-columns">
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+          </div>
+
+          <h3>Template rows</h3>
+          <div class="container-grid grid-rows">
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+            <div class="item">1fr</div>
+          </div>
+
+          <h3>Template rows and columns</h3>
+          <div class="container-grid grid-rows-columns">
+            <div class="item primero">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article>
+          <div class="estructura">
+            <div class="_header">HEADER</div>
+            <div class="_sidelbar">SIDELBAR</div>
+            <div class="_main">MAIN</div>
+            <div class="_footer">FOOTER</div>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <h2>Responsividad usando grid</h2>
+          <div class="responsivo">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+          </div>
+        </article>
+      </section>
     </main>
+    <footer></footer>
   </body>
 </html>

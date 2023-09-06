@@ -1,51 +1,55 @@
+/* selector global */
 * {
-  background-color: azure;
+  box-sizing: content-box;
 }
-
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
 .myli {
+  /* select class */
   background-color: bisque;
   color: red;
 }
+
 header {
-  color: red;
+  /* select elemento*/
+  color: blue;
   background-color: red;
 }
-
 .content-content-box > div {
   background-color: green;
   width: 300px;
+  height: 10px;
   margin: 30px;
   border: 10px solid black;
 }
-/* se pone punto para llamar por clase y se usa con el nombre solo de etiqueta */
 
-#articulo1 {
-  color: aliceblue;
-  background-color: blueviolet;
+#article-1 {
+  /*select id*/
+  background-color: aquamarine;
 }
-#body1 {
-  background-color: blueviolet;
-}
-/* cuando llamemos id usaremos simbolo gato  */
-/*p {
-  font-size: 24px;
-}*/
+
 #myp {
   color: blue;
 }
+
 .myp {
   font-size: 24px;
 }
+
 .back {
   background-color: brown;
 }
 
 .color-rojo-back-azul {
-  color: red;
+  color: blueviolet;
   background-color: blue;
 }
 
-/* Modelo de caja */
+/* MODELO DE CAJA */
+
 .contenedor {
   margin: 50px;
   background-color: violet;
@@ -59,117 +63,440 @@ header {
 }
 
 .contenedor-con-imagen {
-  width: 400px;
+  width: 300px;
   height: 400px;
   padding: 20px;
   background-color: aqua;
-  background-image: url("Public/logo-de-nintendo-1-1200x670.png");
+  background-image: url("public/19655ae89452bb1e6bcbd7d3648d698d.jpg");
   background-size: cover;
-  background-color: center;
+  background-position: center;
+  text-align: center;
 }
-
 .contenido-con-imagen {
   background-color: white;
 }
+/* selectores */
 
-/* Selectores*/
-/* Selector por elemento*/
+/* selector pór elemento */
 span {
   font-weight: bold;
 }
-
-/* Asignan los mismos estilos a los elementos con nombres diferentes, esta regla afecta a todos los elementos <p> y <span>*/
-
-article,
+/*  Asigan los mismos estílos a elementos con nombres diferentes, esta regla afecta a todos los elementos <p> y <span> */
+p,
 span {
-  color: violet;
+  color: blueviolet;
 }
-
-/* Afecta solo a los elementos <p> que se encuentran dentro de la etiqueta <main>, ya sea contenido directo o indirecto*/
+/*  Afecta solo a los elementos <p> que se encuentran dentro de la etiqueta <main>, ya sea contenido directo o inderecto */
 main p {
   background-color: aquamarine;
 }
+/*  Usa el caracter > para referenciar a un elemento que es hijp directo .contenedor .parrafo */
 
-/* uesa el caracter > para referenciar a un elemento que es hijo directo .contenedor .parrafo */
 .contenedor-parrafo > p {
   font-size: 35px;
 }
-
-/* Este selector hace referencia a elementos que estan precedidos por otros elementos; ambos deben estar al mismo nivel */
+/* 
+Este selector hace referencia a un elemento que está
+precedido por otro elemento; ambos deben compartir el
+mismo elemento padre. Afecta a todos los elementos <p>
+que se ubican inmediatamente después de un elemento
+<h1>.
+ */
 
 h1 + p {
   color: red;
 }
 
 /* Estilos mas usados */
-/* Declara el tipo de letra que se usa para mostrar en un texto.Se pueden declarar multiples valores separados por coma para ofrecer al navegador varias alternativas en caso de que alguna no se encuentre disponible */
+/* 
+Declara el tipo de letra que se usa para mostrar en un texto. Se pueden declarar múltiples valores separados por coma prara ofrecer al navegador varias alternativas en caso de que alguna no se encuebtre disponible
+ */
 .container {
-  border-radius: 1px solid black;
+  border-top: 1px solid black;
   padding: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
 }
-
 .container > .content > p {
   background-color: white;
   color: black;
-  font-size: 25px;
-  font-weight: 100;
-  font-style: oblique;
+  font-size: 25px; /* Determina el tamaño de la fuente; puede estar incluido en px, pt, %, rem, em*/
+  font-weight: 100 /* bold (desde 100 hasta 1000) */;
+  font-style: oblique; /* normal, italic, oblique */
 }
 
 .content > h3 {
   background-color: bisque;
-  font: bold 30px Arial, sans-serif; /*Permite declarar varios aributos al mismo tiempo separados por espacios, 1° grpspr 2° tamañp 3°familia de la fuente*/
-  text-align: center;
-  line-height: 60px; /* Define un espacio entre lineas*/
-  background-image: url("Public/logo.png");
+  font: bold 30px Arial, sans-serif; /* Permite declarar varios atributos al mismo tiempo, separados por espacios. 1° grosor 2°tamaño 3° familia de fuente */
+  text-align: center; /* left, right, center, justify */
+  line-height: 60px; /* Define el espacio entre lineas */
 }
+
+/* colores */
 
 .mydiv {
   height: 100px;
   width: 100px;
   border: 1px solid black;
   padding: 20px;
-  background-color: rgb(156, 255, 301);
-  background-image: url("Public/logo.png");
+  background-color: rgb(255, 380, 100);
+  background-image: url("public/1693229689370.jpg");
 }
 .div-in-mydiv {
   height: 50px;
   width: 50px;
   border: 1px solid black;
-  background-color: rgb(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
 }
-
 .div-in-mydiv-2 {
   height: 50px;
   width: 50px;
   border: 1px solid black;
-  background-color: #ff0000;
+  background-color: #ff0000; /* 0 - 9 y A F  */
 }
 
+.content {
+  font-size: 30px;
+}
+
+/* Tamaños */
 .div-in-mydiv-3 {
   height: 50px;
   width: 50px;
-  margin: 20px 0px;
+  margin: 20px 0;
   border: 1px solid black;
-  background-color: #00ff00;
+  background-color: #00ff00; /* 0 - 9 y A F  */
 }
-
 .tamano {
   margin: 100px 20px;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   background-color: black;
 }
 
 .tamano-hijo {
-  height: 50%;
-  width: 50%;
-  background-color: pink;
+  height: 25%;
+  width: 25%;
+  background-color: red;
+}
+.div-vh-vw {
+  height: 100vh;
+  width: calc(100vw - 40px); /* calculo con CSS */
+  background-color: blue;
 }
 
-.div-vh-vw {
-  height: 100vh; /* 100% del alto de la página*/
-  width: 100vw; /*100% del ancho de la página*/
+.punto {
+  height: 100pt;
+  width: 100pt;
+  background-color: red;
+}
+.div-rem {
+  height: 20rem; /* relación al la fuente de todo el html (Documento) */
+  width: 20rem;
+  background-color: #00ff00;
+}
+.div-em {
+  height: 20em; /* relación al la fuente del contenedor */
+  width: 20em;
   background-color: blue;
+}
+
+._contenedor {
+  background-color: red;
+  width: 500px;
+  height: 500px;
+}
+._contenido {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  max-height: 200px; /* El maximo de alto  */
+  max-width: 200px; /* El maximio de ancho */
+  overflow-x: auto; /* scroll, hidden, auto */
+  overflow-y: hidden;
+}
+._otrocontenido {
+  background-color: blue;
+  width: 150px;
+  height: 150px;
+}
+
+.contenido-grande {
+  height: 400px;
+  width: 400px;
+  background-color: chocolate;
+}
+
+.contenedor-de-bordes > div {
+  height: 100px;
+  width: 100px;
+  border-width: 5px;
+  border-style: dotted;
+  border-color: #00ff00;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.borde-1 {
+  border-style: dashed !important;
+}
+.borde-2 {
+  border-style: double !important;
+}
+.borde-3 {
+  border-style: outset !important;
+}
+.borde-4 {
+  border-style: solid !important;
+}
+.borde-en-una-linea {
+  border: 1px solid red; /* 1° tamaño de linea (border-with), 2° Estilo de borde, 3° color */
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+}
+/* 
+Flex container
+afectara no solo a si mismo, tambien afectara a lo que contiene
+
+Es un sistema de elementos flexibles. Donde los elementosHTML se adaptan y colocan automaticamanete siendo mas facil personalizarlos
+ */
+
+/* 
+ 1 - flex-direction : define en que dirección se distribuiran los elementos dentro del contenedor
+ - column
+ - column-reverse
+ - row
+ - row-reverse
+
+ 2- flex-wrap: define si que los elementos dentro del contenedor puedan saltar a la siguiente fila o columna
+ - wrap
+ - nowrap
+
+ 3- fex-flow : Es una combinacion de las propiedades flex-directio y flex-wrap
+
+ 4- justify-conetnt : para alinear el contenido
+ - star
+ - center
+ - end
+ - flex-start
+ - flex-center
+ - flex-end
+
+ 5- align-items : se usa para alinear en vertical los elementos dentro del contenedor
+ - center
+ - start
+ - end
+ - stretch
+ - baseline
+
+ 6 - Align-content para alinear las filas::after
+
+ - space-between
+ - space-arround
+ - strech
+ - center
+ - flex-start
+ - flex-end
+
+
+  */
+
+.flex-container {
+  display: flex;
+  /* flex-direction: row; */ /* column, roww, reverse, column-reverse, row-reverse */
+  flex-wrap: wrap; /* nowrap,wrap, wrap-reverse */
+  /*  flex-flow: row wrap; */ /* Es una combinacion de las propiedades flex-directio y flex-wrap */
+  /* justify-content: end; */
+  /*  align-items: end; */
+  align-content: space-around;
+  font-size: 30px;
+  border: 1px solid black;
+  padding: 10px;
+
+  height: 300px;
+}
+/* Flex Item */
+.flex-container > div {
+  /* margin: 10px; */
+  background-color: #007fff;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  line-height: 70px;
+  height: 70px;
+}
+
+.contenedor-perfecto {
+  display: flex;
+  background-color: #ddd;
+  height: 40vh;
+  width: 40vw;
+  justify-content: center;
+  align-items: center;
+}
+.contenido-perfecto {
+  display: flex;
+  background-color: #00ff00;
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Selector hijo */
+/* 
+Comportamiento de elementos hijos dentro de contenedores flex:
+
+1- order: Especifica el orden del los elementos
+
+2- flex-grow: Determina cuanto crece el elemento relativo al resto de elementos que estan dentro del contenedor flex
+
+ */
+.flex-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  font-size: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  align-items: stretch;
+}
+.flex-container-2 > div {
+  /* margin: 10px; */
+  background-color: #007fff;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  line-height: 70px;
+  height: 70px;
+}
+.flex-container-2 > div:nth-child(1) {
+  order: 3; /* para cambiar el orden */
+  flex-grow: 1;
+  background-color: red;
+}
+.flex-container-2 > div:nth-child(2) {
+  order: 1;
+  flex-grow: 5;
+  background-color: blue;
+}
+
+.flex-container-2 > div:nth-child(3) {
+  order: 2;
+  flex-grow: 5;
+  background-color: blueviolet;
+}
+
+/* Flex - shrink */
+
+/* 
+Determina cuanto se puede encoger un elemento en relación a los demas dentro de un contenedor flex */
+
+.flex-container-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.flex-container-3 > div {
+  margin: 10px;
+  background-color: #9233a9;
+  color: #fff;
+  padding: 20px;
+  width: 100px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.flex-container-3 > div:nth-child(2) {
+  flex-shrink: 0;
+}
+
+/* 
+flex-basis: 
+Determina una longitud especifica
+ */
+
+.flex-container-3 > div:nth-child(3) {
+  flex-basis: 200px;
+}
+/*Display Grid nos permitira disponer elementos en 2 dimenciones a diferencia de Flex que nos ayuda a disponer elementos solo en una dimension*/
+
+.container-grid {
+  display: grid;
+}
+
+.item {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border: 1px solid #a0b7ff;
+}
+
+.grid-columns {
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /*fr fr fr, repeat (cantidad, u.medida)*/
+}
+
+.grid-rows {
+  grid-template-rows: 1fr 50% 1fr;
+}
+.grid-rows-columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.primero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.estructura {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-areas:
+    "_header _header"
+    "_sidelbar _main"
+    "_footer _footer";
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-columns: 300px 1fr;
+}
+._header {
+  grid-area: _header;
+  background-color: #00ff00;
+}
+._sidelbar {
+  grid-area: _sidelbar;
+  background-color: #9233a9;
+}
+._main {
+  grid-area: _main;
+  background-color: #a0b7ff;
+}
+._footer {
+  grid-area: _footer;
+  background-color: aqua;
+}
+
+.responsivo {
+  display: grid;
+  /*grid-template-columns: minmax(100px, 200px) 1fr 1fr;*/
+  grid-template-columns: repeat(3, minmax(100px, 200px));
+  border: 1px solid #007fff;
+  padding: 15px;
+  gap: 15px;
+}
+.responsivo > div {
+  background-color: #007fff;
+  color: #fff;
+  padding: 30px;
 }
