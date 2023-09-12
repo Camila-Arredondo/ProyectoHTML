@@ -4,6 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro JS</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body class="introjs">
+    <header class="header_">
+      <h1>INTRO JS</h1>
+    </header>
+
+    <main class="main_">
+      <section class="containerjs">
+        <h2>MAIN</h2>
+        <article>
+          <div class="card">
+            <h2>Calculadora Factorial</h2>
+            <label for="inputfatorial">Número</label>
+            <input type="number" id="inputfatorial" />
+            <i id="respuesta1"></i>
+            <button onclick=" calcularFactorial()">
+              Calculadora factorial
+            </button>
+          </div>
+        </article>
+
+        <article>
+          <div class="card">
+            <h2>Verificar Palindromo</h2>
+            <label for="inputpalindromo"> ¿Es palindromo?</label>
+            <input type="text" id="inputpalindromo" />
+            <i id="respuesta2"></i>
+            <button onclick=" verificarPalindromo()">
+              Verificar Palindromo
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <aside>ASIDE</aside>
+    </main>
+
+    <footer class="footer_">
+      <p>FOOTER</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>

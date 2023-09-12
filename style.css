@@ -500,3 +500,75 @@ Determina una longitud especifica
   color: #fff;
   padding: 30px;
 }
+
+/* Intro JS */
+
+.introjs {
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+  grid-template-areas: "header_" "main_" "footer_";
+  min-height: 100vh;
+  margin: 0;
+}
+.header_ {
+  display: flex;
+  grid-area: header_;
+  background-color: #333;
+  color: #fff;
+}
+.header_ > h1 {
+  display: block;
+  line-height: 70px;
+  margin: auto 20px;
+}
+.main_ {
+  grid-area: main_;
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 20px;
+  padding: 20px;
+}
+.containerjs {
+  border-right: 1px solid #ddd;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.card > input[type="number"],
+.card > input[type="text"] {
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.card > button {
+  margin: 20px auto 0px;
+  width: 90%;
+  padding: 10px;
+  background-color: #007fff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.footer_ {
+  grid-area: footer_;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+.footer_ > p {
+  font-size: 20px;
+  color: #fff;
+}
